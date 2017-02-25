@@ -1,10 +1,3 @@
-function hourAMPM(h) {
-    return {
-        hour : (h > 12) ? h - 12 : h,
-        m : h >= 12 ? 'PM' : 'AM'
-    }
-}
-
 function getCurrentWeather() {
   var url = 'http://api.openweathermap.org/data/2.5/weather?zip=' +
     config.weather.location + '&units=imperial&APPID=' + config.weather.apikey;
