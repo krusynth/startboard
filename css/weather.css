@@ -1,0 +1,141 @@
+.weather-today {
+  display: block;
+}
+.weather-current {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-current .datetime {
+  /*flex-basis: 100%;
+  margin-bottom: 10px;*/
+  display: none;
+}
+
+.weather-current .time {
+  display: none;
+}
+
+.weather-current .day,
+.weather-current .date {
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.weather-current .day {
+  margin-right: 0.5em;
+}
+
+.weather-current .weather-glyph {
+  font-size: 1200%;
+  margin-bottom: 20px;
+}
+
+.weather-current .temp-list {
+  display: block;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.weather-current .temp {
+  display: block;
+  margin-top: -25px;
+  font-size: 700%;
+}
+
+.weather-current .high-low-temp {
+  display: block;
+}
+
+.weather-current .low-temp,
+.weather-current .high-temp {
+  display: inline-block;
+  font-size: 400%;
+}
+
+.weather-current .low-temp {
+  margin-right: 25px;
+}
+
+.low-temp {
+  color: #3333cc;
+}
+
+.high-temp {
+  color: #cc3333;
+}
+
+/* Forecast */
+.forecast {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.forecast li {
+  margin: 0;
+  padding: 0;
+  border: 4px solid #333333;
+  border-radius: 5px;
+  margin-right: 10px;
+  min-width: 80px;
+}
+
+.forecast li:last-child {
+  margin-right: 0;
+}
+
+.forecast .datetime {
+  display: block;
+  background-color: #666666;
+  color: #ffffff;
+}
+.forecast .day,
+.forecast .time,
+.forecast .date {
+  display: block;
+}
+
+.forecast .time,
+.forecast .day {
+  padding: 4px 5px;
+  font-size: 250%;
+}
+.forecast .date  {
+  font-size: 125%;
+  padding-bottom: 5px;
+}
+
+.forecast .weather-glyph {
+  font-size: 400%;
+  margin: 10px;
+}
+
+.forecast .temp-list {
+  display: block;
+}
+
+.forecast .temp {
+  font-size: 300%;
+}
+
+.forecast .high-low-temp {
+  font-size: 200%;
+}
+
+.forecast .low-temp {
+  margin-right: 0.25em;
+}
+
+/* Hide some fields depending on the format. */
+.forecast-today .day,
+.forecast-week .time,
+.forecast-today .high-low-temp,
+.forecast-week .temp,
+.forecast-today .date {
+  display: none;
+}

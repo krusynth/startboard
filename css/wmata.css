@@ -1,0 +1,68 @@
+
+.rail, .bus {
+  border: 4px solid #333333;
+  border-radius: 5px;
+}
+
+.train-times, .bus-times {
+  width: 100%;
+  font-size: 150%;
+}
+
+.train-times th,
+.bus-times th {
+  padding: 5px 7px;
+}
+
+.train-times td,
+.bus-times td {
+  padding: 5px 7px;
+}
+
+.train-times tr:nth-child(odd),
+.bus-times tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.train-times tr.table-heading,
+.bus-times tr.table-heading {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.bus-next span {
+  margin-left: 10px;
+}
+.bus-next span::after {
+
+}
+
+.train-line span {
+  font-size: 80%;
+  font-weight: bold;
+
+  border-radius: 25px;
+  padding: 5px 4px;
+}
+
+/* Lines: RD, BL, YL, OR, GR, or SV */
+.train-line .line-GR {
+  background-color: #00cc00;
+}
+.train-line .line-YL {
+  background-color: #dae82a;
+}
+.train-line .line-RD {
+  background-color: #ee0000;
+}
+.train-line .line-BL {
+  background-color: #0000cc;
+  color: white;
+}
+.train-line .line-OR {
+  background-color: #e0960f;
+}
+.train-line .line-SV {
+  background-color: #bbbbbb;
+}
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Startboard</title>
+        <meta name="description" content="Startboard - your personal local status board">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/weather-icons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/weather.css">
+        <link rel="stylesheet" href="css/wmata.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Startboard</a>
+        </div>
+
+          <div class="navbar-right">
+            <div id="current-time"></div>
+          </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-5" class="weather">
+          <h2>Current Weather</h2>
+          <div id="weather-today" class="weather-today"></div>
+          <div id="weather-forecast" class="weather-forecast"></div>
+          <h2>Forecast</h2>
+          <div id="weather-week" class="weather-week"></div>
+        </div>
+
+        <!--div class="col-md-4" id="events"></div-->
+        <div class="col-md-7" id="transportation">
+          <div id="metro" class="metro">
+            <h2>Next Train</h2>
+            <div class="rail" id="rail"></div>
+            <h2>Next Bus</h2>
+            <div class="bus" id="bus"></div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p><a href="https://github.com/krues8dr/startboard">Startboard</a> by <a href="https://krues8dr.com/">Krues8dr</a></p>
+      </footer>
+    </div> <!-- /container -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/vendor/moment.js"></script>
+      <script>var config;</script>
+      <script src="config.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/wmata.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>
