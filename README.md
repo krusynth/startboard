@@ -37,7 +37,7 @@ wanted a way to show local information on my TV. Since I already have a computer
 hooked up to it as a media center, I just needed to create an html page I could
 load into a browser.
 
-I didn't want to have to use a server to run this, so I that meant everything
+I didn't want to have to use a server to run this, so everything
 must run client-side.  This means avoiding most messy OAuth, but also prevents
 me from being able to load local JSON files due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
 Thus, all of our config must be in Javascript files.
