@@ -9,8 +9,8 @@ and [WMATA](https://developer.wmata.com/) (Washington, DC).
 
 ## Setup
 
-1. Copy the config.example.js file to config.js
-2 Enter your api credentials and location information into the config.js file:
+* Copy the config.example.js file to config.js
+* Enter your api credentials and location information into the config.js file:
 
   * Weather
     * Sign up for an [OpenWeatherMap](http://openweathermap.org/) API account.
@@ -26,6 +26,8 @@ and [WMATA](https://developer.wmata.com/) (Washington, DC).
 
 * If you want, change the time settings to use military time, etc.
 
+Once you have the app configured, you can set the `Index.html` file as your
+browser's homepage.  In Chrome, you can also use the [Replace New Tab Page](https://chrome.google.com/webstore/detail/replace-new-tab-page/cnkhddihkmmiiclaipbaaelfojkmlkja) plugin to show this file on all new tabs.
 
 ## Background
 
