@@ -1,15 +1,17 @@
 function getCurrentWeather() {
-  var url = 'http://api.openweathermap.org/data/2.5/weather?zip=' +
-    config.weather.location + '&units=imperial&APPID=' + config.weather.apikey;
-
-  return $.get(url);
+  return $.get('http://api.openweathermap.org/data/2.5/weather', {
+    'zip': config.weather.location,
+    'units': 'imperial',
+    'APPID': config.weather.apikey
+  });
 }
 
 function getForecast() {
-  var url = 'http://api.openweathermap.org/data/2.5/forecast?zip=' +
-    config.weather.location + '&units=imperial&APPID=' + config.weather.apikey;
-
-  return $.get(url);
+  return $.get('http://api.openweathermap.org/data/2.5/forecast', {
+    'zip': config.weather.location,
+    'units': 'imperial',
+    'APPID': config.weather.apikey
+  });
 }
 
 function updateWeather() {
